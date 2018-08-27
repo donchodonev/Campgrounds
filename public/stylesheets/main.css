@@ -1,0 +1,31 @@
+/*PERSONAL CSS*/
+
+.thumbnail img {
+    width: 100%;
+
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    font-size: 19px
+}
+
+.delete-form {
+    display: inline;
+}
+
+/* Google Maps */
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+.indexImage {
+    min-height: 195px;
+    max-height: 195px;
+}
