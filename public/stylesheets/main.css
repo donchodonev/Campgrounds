@@ -38,6 +38,7 @@ body {
 background: #aa4b6b;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-repeat: no-repeat;
 
 }
 
@@ -62,6 +63,11 @@ background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+
     padding: 9px;
     color: white;
     text-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2), 0px 8px 20px rgba(0, 0, 0, 0.2), 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    font-size: 16px;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -118,4 +124,34 @@ background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+
     background-image: none;
     border: 1px solid transparent;
     border-radius: 4px;
+}
+
+.campDescription {
+    padding: 10px;
+    border: 2px solid #ffffff1c;
+    border-radius: 10px;
+    color: white;
+}
+
+
+
+a:focus, a:hover {
+    color:black;
+    text-decoration: underline;
+}
+
+.label {
+    font-size: 85%;
+}
+
+.labelColor {
+    color: white;
+}
+
+#left {
+    float: left;
+}
+
+.campNameColor{
+    color: black
 }

@@ -7,11 +7,11 @@
             <div class="thumbnail">
                 <img class="img-responsive" src ="<%=campground.image%>">
                 <div class="caption-full">
-                    <h4 class="pull-right">$<%=campground.price%>/night</h4>
-                    <h4><a><%= campground.name%></a></h4>
-                    <p> <%=campground.description %></p>
+                    <h4 class="label label-info pull-right">$<%=campground.price%>/night</h4>
+                    <h4><a class="campNameColor"><%= campground.name%> <span class="glyphicon glyphicon-tent"></span> </a></h4>
+                    <p class="campDescription"> <%=campground.description %></p>
                     <p>
-                    <em>Submitted by: <%= campground.author.username %>, <%= moment(campground.createdAt).fromNow() %></em>
+                    <em class="label label-default">Submitted by: <%= campground.author.username %>, <%= moment(campground.createdAt).fromNow() %></em>
                     </p>
                     <% if (currentUser && campground.author.id.equals(currentUser._id) || currentUser && currentUser.isAdmin) { %>
                     <a class="btn btn-warning" href="/campgrounds/<%=campground._id%>/edit">Edit</a>  
@@ -23,11 +23,13 @@
             </div>
             <div id="map"></div>
             <div class="well">
-                
+              
+                    <hr>
                 <div class="text-right">
+                    <a id="left" class="btn btn-info" href="/campgrounds">Back</a>
                     <a class="btn btn-success" href="/campgrounds/<%=campground._id%>/comments/new">Add a comment</a>
                 </div>
-                <hr>
+                
                 <% campground.comments.forEach(function (comment){ %>
                 <div class="row">
                     <div class="col-md-12">
