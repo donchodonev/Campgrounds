@@ -4,10 +4,10 @@
     <div style="width: 30%; margin: 25px auto;">
         <form action="/register" method="post">
             <div class="form-group">
-                <input class="form-control" type="text" name="username" placeholder="username" required oninvalid="setCustomValidity('Please, enter a username !')">
+                <input class="form-control" type="text" name="username" placeholder="username" minlength="5" required>
             </div>
             <div class="form-group">
-                <input class="form-control" type="password" name="password" placeholder="password" required pattern=".{8,}" oninvalid="setCustomValidity('Password MUST BE atleast 8 characters long !')">
+                <input class="form-control" type="password" name="password" placeholder="password" minlength="8" >
             </div>
             <div class="form-group">
                 <input class="form-control" type="text" name="adminCode" placeholder="Admin Code">

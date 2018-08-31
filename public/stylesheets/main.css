@@ -29,3 +29,7 @@
     min-height: 195px;
     max-height: 195px;
 }
+
+#pagination {
+   margin: 10px auto;
+}
