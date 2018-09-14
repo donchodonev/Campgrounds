@@ -35,7 +35,9 @@
             
             <div class="thumbnail">
             <img class="indexImage" src=<%= camp.image %>>
-            <div class="caption">
+            <a href="/campgrounds/<%= camp._id %>" ><i href="/campgrounds/<%= camp._id %>" class="fas fa-camera-retro"></i></a>
+        
+             <div class="caption">
                 <h4> <%= camp.name %></h4>
             </div>
             <a href="/campgrounds/<%= camp._id %>" class="btn btn-primary">More info</a>
