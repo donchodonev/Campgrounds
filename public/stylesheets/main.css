@@ -186,16 +186,16 @@ div.thumbnail i {
 }
   
 
-div.thumbnail:hover img {
+div.thumbnail.index:hover img {
 opacity: 0.5;
 
 }
 
-div.thumbnail * {
+div.thumbnail.index * {
     transition: all 0.4s ease-in-out;
 }
 
-div.thumbnail:hover i {
+div.thumbnail.index:hover i {
     transform: translate(-50%,-90%) scale(2);
     opacity: 0.7;
     transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -231,13 +231,16 @@ div.thumbnail:hover i {
     text-align: center;
     background: rgba(218, 218, 218, 0.219);
     cursor: pointer;
-    margin-right: 3%;
-    margin-left: 3%;
+    margin: 2% 2% 2% 0;
     overflow: hidden;
   }
   
   #jiggle-sign-up.anim {
     animation: jiggle 3s ease-in infinite;
+    margin-bottom: 3%;
+    margin-right: 3%;
+    margin-left: 3%;
+    overflow: hidden;
   }
   
   @keyframes jiggle {
@@ -256,15 +259,13 @@ div.thumbnail:hover i {
   }
 
 
-.homebutton {
-
+a.homebutton {
     border-radius: 5px;
     box-shadow: 1px 1px 5px 3px hsla(0, 0%, 0%, .1);
     color: hsla(255, 255%, 255%, 1);
     text-align: center;
     background: rgba(218, 218, 218, 0.219);
     cursor: pointer;
-    margin-right: 3%;
-    margin-left: 3%;
+    margin: 3% 3% 0 3%;
     overflow: hidden;
   }
