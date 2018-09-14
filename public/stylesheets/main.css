@@ -188,7 +188,7 @@ div.thumbnail i {
 
 div.thumbnail:hover img {
 opacity: 0.5;
-filter: grayscale(100%)
+
 }
 
 div.thumbnail * {
