@@ -26,15 +26,15 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="<%= typeof page !== 'undefined' && page === 'campgrounds' ? 'active' : '' %>"><a class="homebutton" href="/campgrounds">Home</a></li>
+            <li class="<%= typeof page !== 'undefined' && page === 'campgrounds' ? 'active' : '' %>"><a class="userButtons" href="/campgrounds">Home</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
               <% if(!currentUser){ %>
                   <li class="<%= typeof page !== 'undefined' && page === 'login' ? 'active' : '' %>"><a id="jiggle-log-in" class="btn anim" href="/login">Login</a></li>
                   <li class="<%= typeof page !== 'undefined' && page === 'register' ? 'active' : '' %>"><a id="jiggle-sign-up" class="btn anim" href="/register">Sign Up</a></li>
               <% } else { %>
-                  <li><a href="#">Signed In As <%= currentUser.username %></a></li>
-                  <li><a class="btn btn-danger" href="/logout">Logout</a></li>
+                  <li><a id="damnButton" href="#" class="btn btn-success userButtons">Signed In As <%= currentUser.username %></a></li>
+                  <li><a class="btn btn-danger userButtons" href="/logout">Logout</a></li>
               <% } %>
           </ul>
         </div>

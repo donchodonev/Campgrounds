@@ -259,7 +259,7 @@ div.thumbnail.index:hover i {
   }
 
 
-a.homebutton {
+a.userButtons {
     border-radius: 5px;
     box-shadow: 1px 1px 5px 3px hsla(0, 0%, 0%, .1);
     color: hsla(255, 255%, 255%, 1);
@@ -268,4 +268,9 @@ a.homebutton {
     cursor: pointer;
     margin: 3% 3% 0 3%;
     overflow: hidden;
+  }
+
+  #damnButton {
+      margin-top: 1.5%;
+      
   }
