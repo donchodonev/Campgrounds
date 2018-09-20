@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>BulGrounds</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" href="/stylesheets/landing.css">
@@ -22,16 +23,17 @@
     </div>
     
     <div id="landing-header">
- 		<h1>Welcome to BulGrounds!</h1>
-		<a href="/campgrounds" class="btn btn-lg btn-success">View All Campgrounds</a>
+ 		<h1 id="welcome">Welcome to BulGrounds!</h1>
+		
 		 <p>
-           <form action="/campgrounds" method="GET" class="form-inline">
-               <div class="form-group">
-                   <input type="text" name="search" placeholder="Campground search..." class="form-control">
-                   <input type="submit" value="Search" class="btn btn-default">
+           <form id="fuzzySearch" action="/campgrounds" method="GET" class="form-inline">
+               <div id="searchBar" class="form-group">
+                   <input type="text" style="text-align:center;" name="search" placeholder="Campground search..." class="form-control">
+                   <input id="submitSearch" type="submit" value="Search" class="btn btn-default">
                </div>
            </form>
        </p>
+       <a id="viewCampgrounds" href="/campgrounds" class="btn btn-lg btn-success">View All Campgrounds</a>
     </div>
     
     <ul class="slideshow">
