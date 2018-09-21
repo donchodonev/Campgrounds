@@ -145,7 +145,7 @@ router.get("/:id", function(req, res){
         } else {
             console.log(foundCampground)
             //render show template with that campground
-            res.render("campgrounds/show", {campground: foundCampground});
+            res.render("campgrounds/show", {campground: foundCampground,Maps_JavaScript_API: process.env.Maps_JavaScript_API});
         }
     });
 });
