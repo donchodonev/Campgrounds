@@ -6,7 +6,7 @@ var NodeGeocoder = require('node-geocoder');
  var options = {
   provider: 'google',
   httpAdapter: 'https',
-  apiKey: process.env.GEOCODER_API_KEY || GEOCODER_API_KEY,
+  apiKey: process.env.GEOCODER_API_KEY,
   formatter: null
 };
  
@@ -114,7 +114,7 @@ router.post("/", middleware.isLoggedIn, upload.single('image'), function(req, re
     var lat = data[0].latitude;
     var lng = data[0].longitude;
     var location = data[0].formattedAddress;
-    var newCampground = {name: name,price: price, image: image,imageId:imageId, description: desc, author:author, location: location ||'Plovdiv, Bulgaria', lat: lat || 42.733883, lng: lng || 42.733883};
+    var newCampground = {name: name,price: price, image: image,imageId:imageId, description: desc, author:author, location: location, lat: lat, lng: lng};
     // Create a new campground and save to DB
     Campground.create(newCampground, function(err, newlyCreated){
         if(err){

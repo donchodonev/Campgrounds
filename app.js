@@ -11,6 +11,7 @@ var express        = require("express"),
     Comment        = require("./models/comment"),
     User           = require("./models/user");
 
+    require('dotenv').load();
     
 //requring routes
 var commentRoutes    = require("./routes/comments"),
