@@ -20,7 +20,11 @@ var commentRoutes    = require("./routes/comments"),
 
 mongoose.connect(process.env.DATABASEURL, { useNewUrlParser: true });
 
+<<<<<<< HEAD
 //fakecomment
+=======
+//fakecommentaaaaaassssss
+>>>>>>> 9d852e087f8f3571f8540147955563b7ede814e4
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
