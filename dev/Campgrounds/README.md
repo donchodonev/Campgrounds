@@ -8,4 +8,4 @@ Creating and updating campgrounds is no longer possible since google require a b
 
 New API key has been generated, functionalities restored.
 
-TO-DO, figure out something different to take up space on the page instead of google maps or get rich to pay for having gmaps.
+TO-DO, figure out something different to take up space on the page instead of google maps or get rich to pay for having gmaps..
